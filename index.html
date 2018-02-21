@@ -3,37 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
     <title>Magic Crystals</title>
   </head>
   <body class="container">
-    <div class="jumbotron">
-      <h1 class="text-primary text-center">Magic Crystal</h1>
-      <p class="text-center">Click a crystal to get to the random number without going over.</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-5 slign-self-center">
-    
-        <div class="card text-center">Random Number
-        </div>
-
-      </div>
+    <div class="jumbotron bg-info">
+      <h1 class="text-white text-center">Magic Crystal</h1>
+      <p class="text-center">Click a crystal to get to the magic number without going over.</p>
     </div>
     <div class="row">
-      <div class="col">
-        <button>crystal 1</button>
+        <div class="col-3">
+          <div class="card border border-success">
+            <p class="text-center text-success ">Wins</p>
+            <div id="wins" class="text-center"></div>
+          </div>
+        </div>
+      
+      <div class="col-5 slign-self-center">
+    
+        <div class="card border border-primary text-center">Magic Number
+          <div id="Magic-Number"></div>
+          <div>Your Number</div>
+          <div id="your-number">0</div>
+        </div>
       </div>
-      <div class="col">
-        <button>crystal 2</button>
-      </div>
-      <div class="col">
-        <button>crystal 3</button>
-      </div>
-      <div class="col">
-        <button>crystal 4</button>
-      </div>
+        <div class="col-3">
+            <div class="card border border-danger">
+              <p class="text-center text-danger">Losses</p>
+              <div id="losses" class="text-center"></div>
+            </div>
+        </div>
     </div>
+    <div><br></div>
+    <div class="row">
+      <div class="col">
+        <img id="crystal1" class="btn-primary" src ="assets/images/blue crystal 2.jpeg" width="150px"; height="auto"></img>
+      </div>
+      <div class="col">
+          <img id="crystal2" class="btn-primary" src ="assets/images/purple crystal 2.jpeg" width="150px"; height="auto"></img>
+      </div>
+      <div class="col">
+          <img id="crystal3" class="btn-primary" src ="assets/images/red crystal.jpeg" width="150px"; height="auto"></img>
+      </div>
+      <div class="col">
+          <img id="crystal4" class="btn-primary" src ="assets/images/yellow crystal.jpeg" width="150px"; height="auto"></img>
+      </div>
+      </div>
+      
+    
 
   
   </body>
