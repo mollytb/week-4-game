@@ -14,11 +14,17 @@ $(document).ready(function () {
     var yourScore = 0;
     // initial function to start game
     function init() {
+        yourScore = 0
         magicNumber = Math.floor((Math.random() * 101) + 20);
         crystal1 = Math.floor((Math.random() * 12) + 1);
         crystal2 = Math.floor((Math.random() * 12) + 1);
         crystal3 = Math.floor((Math.random() * 12) + 1);
         crystal4 = Math.floor((Math.random() * 12) + 1);   
+        $("#Magic-Number").text(magicNumber);
+        $("#wins").text(wins);
+        $("#losses").text(losses);
+        $("#your-number").text(yourScore);
+        
     }
     init();
     //console.log(crystal1)
