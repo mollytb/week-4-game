@@ -10,47 +10,50 @@
     <script src="assets/javascript/game.js"></script>
     <title>Magic Crystals</title>
   </head>
-  <body class="container">
-    <div class="jumbotron bg-info">
+  <body background="assets/images/crystal background.jpg"class="container">
+    <div class="jumbotron" style="background: url(assets/images/jumbotron.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
       <h1 class="text-white text-center">Magic Crystal</h1>
-      <p class="text-center">Click a crystal to get to the magic number without going over.</p>
+      <p class="text-center text-white">Click a crystal to get to the magic number without going over.</p>
+      <p class="text-center text-white">The crystal values change each round</p>
     </div>
     <div class="row">
         <div class="col-3">
-          <div class="card border border-success">
-            <p class="text-center text-success ">Wins</p>
-            <div id="wins" class="text-center"></div>
+          <div class="card border border-success bg-light">
+            <h4 class="text-center text-success">Wins</h4>
+            <div id="wins" class="text-center"  class="text-white"></div>
           </div>
         </div>
       
-      <div class="col-5 slign-self-center">
+      <div class="col-6">
     
-        <div class="card border border-primary text-center">Magic Number
+        <div class="card border border-primary text-center bg-light">Magic Number
           <div id="Magic-Number"></div>
           <div>Your Number</div>
           <div id="your-number">0</div>
         </div>
       </div>
         <div class="col-3">
-            <div class="card border border-danger">
-              <p class="text-center text-danger">Losses</p>
+            <div class="card border border-danger bg-light">
+              <h4 class="text-center text-danger">Losses</h4>
               <div id="losses" class="text-center"></div>
             </div>
         </div>
     </div>
     <div><br></div>
     <div class="row">
-      <div class="col">
-        <img id="crystal1" class="btn-primary" src ="assets/images/blue crystal 2.jpeg" width="150px"; height="auto"></img>
+      <div class="col-3">
+        <img id="crystal1" class="btn" src ="assets/images/blue crystal 2.jpeg" width="150px"; height="auto"></img>
       </div>
-      <div class="col">
-          <img id="crystal2" class="btn-primary" src ="assets/images/purple crystal 2.jpeg" width="150px"; height="auto"></img>
+      <div class="col-3">
+          <img id="crystal2" class="btn" src ="assets/images/purple crystal 2.jpeg" width="150px"; height="auto"></img>
       </div>
-      <div class="col">
-          <img id="crystal3" class="btn-primary" src ="assets/images/red crystal.jpeg" width="150px"; height="auto"></img>
+      <div class="col-3">
+          <img id="crystal3" class="btn" src ="assets/images/red crystal.jpeg" width="150px"; height="auto"></img>
       </div>
-      <div class="col">
-          <img id="crystal4" class="btn-primary" src ="assets/images/yellow crystal.jpeg" width="150px"; height="auto"></img>
+      <div class="col-3">
+          <img id="crystal4" class="btn" src ="assets/images/yellow crystal.jpeg" width="150px"; height="auto"></img>
+    
+          
       </div>
       </div>
       
